@@ -1,0 +1,111 @@
+@import 'base.css';
+
+/***** 공통사항 *****/
+@media screen and (max-width:768px) {
+	html, body {font-size:14px;}
+}
+@media screen and (max-width:480px) {
+	html, body {font-size:12px;}
+}
+@media screen and (max-width:320px) {
+	
+}
+
+@keyframes sizeUp {
+	0% {transform:scale(1);}
+	100% {transform:scale(1.2);}
+}
+@keyframes sizeDn {
+	0% {transform:scale(1.2);}
+	100% {transform:scale(1);}
+}
+
+/***** Header *****/
+header {width:100%; position:fixed;  font-size:1rem; background-color: white; z-index:999; top:0;}
+.logo {margin-top: 3em; margin: auto}
+.nav {cursor:pointer;}
+
+/***** navigation PC *****/
+.navs1{font-family: 'Cabin', sans-serif; background-color: #121212; color: #f1f1f1; float: left; width: 100%}
+.nav1 { float: right; padding:0.75em }
+.navs2{text-align: center;}
+.nav2 {display: inline-block; padding:0.75em; }
+.logo{text-align: center; padding:1em;}
+
+
+
+.banner {position:relative; margin-top:3rem;}
+.banner_wrap {position:relative; width:100%;} /*배너무빙의 기준*/
+/***** banner PC .banner_wrap > li {position:absolute; width:100%;}
+.banner_slogan {position:absolute; width:90%; left:5%; top:50%; color:#fff; transform:translateY(-50%); font-size:1rem;}
+.banner_slogan > h1 {font-size:4em; margin-bottom:0.75em;}	
+.banner_slogan > h4 {font-size:1.5em; margin-bottom:1em;}	
+.banner_slogan > button {font-size:1em; padding:1em; 
+	background-color:rgba(248, 248, 219, .7); color:#121212; border:none;}	
+.banner_slogan > button:hover {background-color:rgba(248, 248, 219, 1);}
+*****/
+
+
+.page1{   }
+
+.box1{ background-color: #cab7e5;
+	   position: relative; height: 30em; margin-top: 10rem}
+
+.box1 > h2 { font-family: 'Volkhov', serif;
+					font-size: 5rem;
+				   display: inline-block;
+				  color:#2d1f42; letter-spacing: 2.25rem;
+				  margin-top: 3rem; }
+
+
+.img1{ float: left; 
+    width: 33.3%;}
+.img1 > img{width: 86.5%; float: right; margin-top: 1rem; }
+
+.img2{ float:  left; width: 33.3%;}
+.img2 > img {width: 91%;right: 10rem; margin-top: -5rem;}
+
+.text{float: left; 
+      width: 33.3%;
+}
+.img_txt1{margin: 5rem; line-height: 2.25rem;}
+
+.img_txt1 > h3 { color:#e9dbfc; font-family: 'Volkhov', serif; font-size: 1,25rem }
+.img_txt1 > h3> strong { color: #3e1768; font-style: italic; font-size: 2rem}
+
+
+.img_txt2{  background-color: #f1f1f1; width: 70%; height: 5rem; float: right;}
+.img_txt2  > div > h3 { font-weight: bold; color:#7d4a65;  }
+.img_txt2 > div {text-align: center; padding: 1rem;}
+
+
+.page2 { margin: 3rem 0 3rem 0;}
+.bg{ background-color: #0a3442; position: relative; }
+
+.box2{ float: left;  background-color: #f1f1f1; width: 70%;margin: auto}
+
+.tit{ float: left; width:20%; }
+.tit > h1 {color: #e8e9e8;font-family: 'Volkhov', serif; font-size: 3.25rem;
+	writing-mode: vertical-rl;; margin: auto;  }
+.shoes{}
+.shoes > li { float: left; width: 50%; padding: 1rem;}
+.shoes > li > img{width: 90.5%;}
+
+.shoes > li > h2{ font-family: 'Cabin', sans-serif; font-weight: bold;}
+.shoes > li > span{ font-family: 'Nanum Gothic', sans-serif; }
+
+
+.page3{}
+.md_hd{margin: auto;text-align: center;}
+
+.md_shoes{ margin: auto; width: 70%;}
+.md_shoes > li {width: 50%; float: left; }
+.md_shoes > li > img { width: 100%; }
+
+.shoes_box{float: left; width: 50% }
+.shoes_box > li{float: right;
+    width: 49%;
+    border: 0.1em solid #eee;
+    margin-left: 0.1rem;
+    margin-bottom: 0.1rem;}
+.box_img >img { width: 100%}
