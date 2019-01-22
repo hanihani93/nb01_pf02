@@ -28,8 +28,10 @@ header {width:100%; position:fixed;  font-size:1rem; background-color: white; z-
 /***** navigation PC *****/
 .navs1{font-family: 'Cabin', sans-serif; background-color: #121212; color: #f1f1f1; float: left; width: 100%}
 .nav1 { float: right; padding:0.75em }
-.navs2{text-align: center;}
-.nav2 {display: inline-block; padding:0.75em; }
+.navs2{text-align: center; }
+.nav2 {display: inline-block; padding:0.75em; font-weight: bold; }
+.nav2 > a{color: #121212}
+.nav2 > a:hover{ color:#df1e3b}
 .logo{text-align: center; padding:1em;}
 
 
@@ -46,10 +48,10 @@ header {width:100%; position:fixed;  font-size:1rem; background-color: white; z-
 *****/
 
 
-.page1{   }
+.page1{}
 
 .box1{ background-color: #cab7e5;
-	   position: relative; height: 30em; margin-top: 10rem}
+	   position: relative; height: 30em; margin-top: 10rem;}
 
 .box1 > h2 { font-family: 'Volkhov', serif;
 					font-size: 5rem;
@@ -62,8 +64,11 @@ header {width:100%; position:fixed;  font-size:1rem; background-color: white; z-
     width: 33.3%;}
 .img1 > img{width: 86.5%; float: right; margin-top: 1rem; }
 
+
 .img2{ float:  left; width: 33.3%;}
-.img2 > img {width: 91%;right: 10rem; margin-top: -5rem;}
+.img2 > img {width: 91%;right: 10rem; margin-top: -5rem;
+			}
+
 
 .text{float: left; 
       width: 33.3%;
@@ -74,8 +79,10 @@ header {width:100%; position:fixed;  font-size:1rem; background-color: white; z-
 .img_txt1 > h3 > strong { color: #3e1768; font-style: italic; font-size: 2rem}
 
 
-.img_txt2{  background-color: #f1f1f1; width: 70%; height: 5rem; float: right;}
+.img_txt2{  background-color: #f1f1f1; width: 70%; float: right;}
 .img_txt2  > div > h3 { font-weight: bold; color:#7d4a65;  }
+.img_txt2 > div >h4> a{ color: #121212; font-weight: bold; }
+.img_txt2 > div > h4> a:hover{color:#7d4a65;}
 .img_txt2 > div {text-align: center; padding: 1rem;}
 
 
@@ -94,7 +101,7 @@ header {width:100%; position:fixed;  font-size:1rem; background-color: white; z-
 .shoes > li > h2{ font-family: 'Cabin', sans-serif; font-weight: bold;}
 .shoes > li > span{ font-family: 'Nanum Gothic', sans-serif; }
 
-
+.shoes > li >div{    font-size: 2.6rem; float: right;}
 
 
 
@@ -113,13 +120,13 @@ header {width:100%; position:fixed;  font-size:1rem; background-color: white; z-
 
 .md_shoes{ margin: auto; width: 70%; }
 
-.md_shoes >li > h2 {font-size: 2rem; font-weight: bold; }
+.md_shoes > h2 {font-size: 2rem; font-weight: bold; }
 
 .md_box > h2 { font-family: 'Nanum Gothic', sans-serif;
 		       font-weight: bold; color: #f1f1f1; font-size: 1.25rem }
 
 
-.md_shoes > li {width: 52.2%; float: left; }
+.md_shoes > li {width: 52.2%; float: left; text-align: center; }
 .md_shoes > li > img { width: 78%; margin: auto; }
 
 
@@ -128,26 +135,40 @@ header {width:100%; position:fixed;  font-size:1rem; background-color: white; z-
     width: 46%;
     border: 0.1em solid #eee;
     margin-left: 1rem;
-	margin-bottom: 1rem;}
+	margin-bottom: 1rem;
+	position: relative;}
+
+.shoes_box > li:hover{ border: 0.1em solid #0a3442;}
+
+
+.w3-button{ background-color:#457483; color: #eee; display: none; position: absolute;
+	        left: 0; top:0; right: 0; }
+
+.shoes_box > li:hover .w3-button { display: block; }
 
 .shoes_txt > h3{ font-family: 'Nanum Gothic', sans-serif;
 font-size: 1rem; font-weight: bold; line-height: 1.6rem; margin: 0.1rem 1rem;  }
 
 
-.md_shoes >li> div {background-color: #6d9ba6; width: 78%; padding: 2rem;} 
-.box_img >img { width: 99.9%;
-    padding: 1rem;
+.md_shoes >li> div {background-color: #6d9ba6; text-align: left; padding: 2rem;}
+.md_shoes >li:hover{ border: 0.1em solid #0a3442;}
+
+
+
+.box_img >img { width: 99.9%; padding: 1rem;
 }
+
+
+
+
 .PRODUCTS{ margin: auto; font-family: 'Volkhov', serif; margin: 1rem;}
+
 
 
 .pro_lt > li> img{
     float: left;
-	width: 95%
-	}
+	width: 95%}
 
-	
- 
 
 .pro_lt> li  { letter-spacing: 2.25rem; }
 .pro_lt > li:last-child{width: 45%; padding: 1rem; float: left;}
@@ -159,14 +180,19 @@ font-size: 1rem; font-weight: bold; line-height: 1.6rem; margin: 0.1rem 1rem;  }
 
 
 .pro_lt>li:first-child{float: left; width:5%;}
-
 .pro_mid{ float: left; width: 16%}
+
+
+
 .pro_mid >li:first-child > h4 { writing-mode: vertical-rl;margin: auto; }
 .pro_mid >li:first-child{border: none;}
+
 .pro_mid > li{ width: 100% ;display: inline-block; text-align: center;
 	margin: 1rem; border: 0.1rem solid #eee; padding: 1rem;}
-	
-.pro_mid > li > h3 {font-family: 'Nanum Gothic', sans-serif; font-size: 0.8rem; }
+
+.pro_mid >li:hover{border: 0.1em solid #0093fa;}	
+
+.pro_mid > li > h3 {font-family: 'Nanum Gothic', sans-serif; font-size: 0.8rem; font-weight: lighter}
 .pro_mid> li >img{ width:65.5% }
 
 
@@ -179,10 +205,65 @@ font-size: 1rem; font-weight: bold; line-height: 1.6rem; margin: 0.1rem 1rem;  }
 .pro_rt > li > h2 >span{}
 
 .ulbox{}
-.colletul{ display: inline-block;
-    text-align: center;}
+
+
+.collection > div > ul { text-align: center;
+    width: 80%;
+	margin: auto;}
+	
+
+
 .ulbox> ul > li{float: left;
-    width: 33.3%;
+    width: 30%;
     margin: auto;
+	height: 18rem;
+	margin-top: 0.5rem;
+	margin-right: .5rem;
+	margin-bottom: .5rem;
+	text-align: right;
+	
+	font-family: 'Cabin', sans-serif;
 }
-.ulbox> ul > li> img{width:80%}
+.ulbox> ul > li> h2{ font-weight: bold; font-size: 2.25rem;letter-spacing: 1.25rem;
+					 font-style: italic;}
+
+
+.ulbox> ul > li> img{width:100%}
+
+
+.colletul> li:nth-child(1){  border: .1rem solid #a65c87;;}
+.colletul> li:nth-child(1):hover{ background-color: #a65c87; color:#f8e6f5}
+
+.colletul> li:nth-child(3){ background-color: #a65c87; color:#f8e6f5 }
+.colletul> li:nth-child(3):hover{ background-color:#e3d3e0; color: #121212}
+
+.RUNNING > li:nth-child(1){border: .1rem solid #b7c3d5}
+.RUNNING > li:nth-child(1):hover{ background-color:#b7c6d9; color: #245789}
+.RUNNING > li:last-child{ }
+
+
+
+.footbg {font-family: 'Cabin', sans-serif;
+		background-color:#121212; color: #eee}
+		
+
+ 
+
+.footbg >div> ul {float: left; width: 24%;
+    				text-align: left; padding: 4.05rem;}
+
+
+.footbg >div> ul> li > h2,h3{ font-weight: 800}
+
+
+.footbg >div> ul> li > h2{line-height: 3.25rem}
+.footbg >div> ul> li >span {line-height: 2rem;}
+
+.SOCIAL> li > a> span{float: left; width: 10%;}
+
+.Info {}
+
+.Info> ul > li{
+	float: right;
+    width: 100%;
+    text-align: right;}
