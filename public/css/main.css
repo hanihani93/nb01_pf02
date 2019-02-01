@@ -352,19 +352,29 @@ font-size: 1rem; font-weight: bold; line-height: 1.6rem; margin: 0.1rem 1rem;  }
 	.pro_mid > li {width: 30%;}
 	.pro_mid > li > h3 {font-size: 1rem;}
 	.pro_lt >li{  letter-spacing: 0rem;}
-	.pro_lt>li:first-child {
-		width: 8%;}
+	
 }
 
 @media screen and (max-width:320px) {
+	
+	.pro_lt>li:first-child {
+		width: 20%;}
+	.pro_lt>li:first-child>h2{writing-mode: vertical-rl;}
+		
+	.pro_lt >li> h3 {font-size: 1.2rem}
+	
+	
 	.pro_lt > li> img {
 		float: left;
 		width: 108%;}
 	.pro_rt >li> img {
 		width: 50%;}
 	
-	.pro_mid >li:first-child{ float: left; width: 15%;}
-	.pro_mid > li {width: 36%;}
+	.pro_mid{width: 100%; padding: 1rem;}
+	.pro_mid >li:first-child > h4{ writing-mode: unset;}
+	.pro_mid > li {width: 45%;
+		float: left;
+		padding: 1rem;}
 	
 }
 
@@ -390,7 +400,9 @@ font-size: 1rem; font-weight: bold; line-height: 1.6rem; margin: 0.1rem 1rem;  }
     font-family: 'Cabin', sans-serif;
 }
 .ulbox> ul > li> h2{ font-weight: bold; font-size: 2.25rem;letter-spacing: 1.25rem;
-					 font-style: italic;}
+					 font-style: italic;
+					 line-height: 4rem;
+					 padding-right: 4.1%;}
 
 
 .ulbox> ul > li> img{width:100%;}
