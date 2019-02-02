@@ -46,3 +46,12 @@ function horzShow() {
 		});
 	}	
 }
+
+$(".md_hd li").click(function(){
+	var idx = $(this).index();
+	$(".md_tab").hide(0);
+	$(".md_tab").eq(idx).show(0);
+	$(".md_hd li").css({"color":"#333"});
+	$(this).css({"color":"#f30"});
+});
+$(".md_hd li").eq(0).trigger("click");
