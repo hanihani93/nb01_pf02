@@ -222,7 +222,7 @@ margin: 0;}
 .shoes_box > li:hover{ border: 0.1em solid #0a3442;}
 
 
-.w3-button{ background-color:#457483; color: #eee; display: none; position: absolute;
+.w3-button{ background-color:#df1e3b; color: #eee; display: none; position: absolute;
 	        left: 0; top:0; right: 0; }
 
 
@@ -232,7 +232,7 @@ margin: 0;}
 font-size: 1rem; font-weight: bold; line-height: 1.6rem; margin: 0.1rem 1rem;  }
 
 
-.md_tab >li> div {background-color: #6d9ba6; text-align: left; padding: 2rem;}
+.md_tab >li> div {background-color: #df1e3b; text-align: left; padding: 2rem;}
 .md_tab >li:hover{ border: 0.1em solid #0a3442;}
 
 
