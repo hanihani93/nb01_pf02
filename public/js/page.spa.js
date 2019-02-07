@@ -4,7 +4,7 @@ var scTop = 0;		// 현재 문서의 scrollTop
 var pages = new Array();	// 각각의 페이지의 상단으로 부터 떨어진 거리
 var scFn = function(){
 	$(".page").each(function(i){
-		pages[i] = $(this).offset().top;
+	pages[i] = $(this).offset().top;
 	});
 	scTop = $(window, "html, body").scrollTop();
 	now = pages.length - 1;
